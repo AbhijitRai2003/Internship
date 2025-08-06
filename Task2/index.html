@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Task Tracker</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="app-container">
+    <h1>Task Tracker</h1>
+    <div class="task-input">
+      <input type="text" id="taskField" placeholder="Enter a new task..." />
+      <button id="addBtn">Add</button>
+    </div>
+    <ul id="taskList"></ul>
+  </div>
+
+  <script>
+    const taskField = document.getElementById("taskField");
+    const addBtn = document.getElementById("addBtn");
+    const taskList = document.getElementById("taskList");
+
+    addBtn.addEventListener("click", () => {
+      const taskText = taskField.value.trim();
+      if (taskText !== "") {
+        const listItem = document.createElement("li");
+        listItem.className = "task-item";
+
+        const taskSpan = document.createElement("span");
+        taskSpan.textContent = taskText;
+        taskSpan.className = "task-text";
+
+        const removeBtn = document.createElement("button");
+        removeBtn.textContent = "Delete";
+        removeBtn.className = "delete-btn";
+
+        listItem.appendChild(taskSpan);
+        listItem.appendChild(removeBtn);
+        taskList.appendChild(listItem);
+
+        taskField.value = "";
+      }
+    });
+
+    taskList.addEventListener("click", (e) => {
+      if (e.target.classList.contains("delete-btn")) {
+        e.target.parentElement.remove();
+      } else if (e.target.classList.contains("task-text")) {
+        e.target.classList.toggle("completed");
+      }
+    });
+  </script>
+</body>
+</html>
