@@ -8,13 +8,13 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: #4CAF50;
+  background: #0be0ef;
   padding: 1rem 2rem;
   flex-wrap: wrap; 
 }
 
 .logo {
-  color: white;
+  color: rgb(220, 93, 43);
   margin: 0;
 }
 
@@ -25,8 +25,9 @@ body {
 }
 
 .nav-links a {
-  color: white;
+  color: rgb(8, 7, 7);
   text-decoration: none;
+  text-rendering: auto;
 }
 
 .content {
