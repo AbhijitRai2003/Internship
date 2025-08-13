@@ -62,7 +62,9 @@ Enter invalid email → You'll get an email format error.
 Fill correctly → You'll see a smooth success animation.
 
 📸 Preview
-![Output ScreenShot](<Screenshot 2025-08-13 213848.png>)
+<img width="1564" height="1008" alt="Screenshot 2025-08-13 213848" src="https://github.com/user-attachments/assets/e24214e4-dbd9-4cec-b883-da49277ea26e" />
+
 👨‍💻 Author
 Abhijit Rai
+
 Crafted with passion for clean, interactive web design.
