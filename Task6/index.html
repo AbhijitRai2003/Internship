@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us- Abhijit Rai</title>
+    <link rel="stylesheet" href="Styles.css">
+</head>
+<body>
+
+    <div class="form-container">
+        <h2><u>Contact Us Form</u></h2>
+
+        <!-- Contact Form -->
+        <form id="contactForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" placeholder="Enter your full name">
+            <small class="error-message" id="nameError"></small>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" placeholder="Enter your email address">
+            <small class="error-message" id="emailError"></small>
+
+            <label for="message">Message:</label>
+            <textarea id="message" placeholder="Type your message here"></textarea>
+            <small class="error-message" id="messageError"></small>
+
+            <button type="submit">Send Message</button>
+        </form>
+        
+    </div>
+
+    <!-- Success Animation Popup -->
+    <div class="success-popup" id="successPopup">
+        <svg class="checkmark" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 52">
+            <circle class="checkmark-circle" cx="26" cy="26" r="25" fill="none"/>
+            <path class="checkmark-check" fill="none" d="M14 27l7 7 17-17"/>
+        </svg>
+        <p>Message Sent Successfully!</p>
+    </div>
+    <br>
+
+    <script src="script.js"></script>
+    
+</body>
+</html>
